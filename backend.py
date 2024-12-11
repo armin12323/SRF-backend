@@ -8,7 +8,9 @@ CORS(app)
 @app.route('/process', methods=['POST'])
 def process_data():
     data = request.json
+
     print(f'this is data : \n{data}\n')
+    
     input_value = data['inputValue']
 
     print(f'this is input val : {input_value}')
